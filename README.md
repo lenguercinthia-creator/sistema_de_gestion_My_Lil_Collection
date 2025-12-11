@@ -1,2 +1,1 @@
 # sistema_de_gestion_My_Lil_Collection
-# sistema_de_gestion_My_Lil_Collection
