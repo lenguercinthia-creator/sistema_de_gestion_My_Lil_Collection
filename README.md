@@ -23,6 +23,7 @@ Cuenta con control total de productos, stock, precios y fechas, y una interfaz a
 ## - Estructura del proyecto
 
 My-Lil-Collection/
+
 ├── main.py                      # Menú principal
 
 ├── database.py                  # Conexión y operaciones con SQLite
