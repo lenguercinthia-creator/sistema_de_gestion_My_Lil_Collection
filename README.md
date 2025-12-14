@@ -23,20 +23,35 @@ Cuenta con control total de productos, stock, precios y fechas, y una interfaz a
 ## - Estructura del proyecto
 
 My-Lil-Collection/
+
 ├── main.py                      # Menú principal
+
 ├── database.py                  # Conexión y operaciones con SQLite
+
 ├── agregar_producto.py          # Funcionalidades separadas
+
 ├── buscar_producto.py
+
 ├── visualizar_listado_productos.py
+
 ├── editar_producto.py
+
+|-- registrar_venta.py
+
 ├── eliminar_producto.py
+
 └── validar_stock.py
+
 ├── inventario.db                # Base de datos con datos de prueba incluidos
+
 ├── requirements.txt
+
 ├── .gitignore
+
 └── README.md
 
-## Roadmap – Próximas versiones
+
+## - Roadmap – Próximas versiones
 
 Planeo seguir desarrollándolo con estas mejoras:
 
@@ -50,12 +65,12 @@ Planeo seguir desarrollándolo con estas mejoras:
 
 Seguime en el repositorio para ver las actualizaciones!
 
-## Ejecución inmediata
+## - Ejecución inmediata
 
-El repositorio incluye una base de datos con productos de ejemplo.  
-Al clonar y ejecutar `python main.py`, vas a ver productos de prueba en el listado.
+- El repositorio incluye una base de datos con productos de ejemplo.  
+- Al clonar y ejecutar `python main.py`, vas a ver productos de prueba en el listado.
 
-## Instalación y uso
+## - Instalación y uso
 
 1. Cloná el repositorio
 
@@ -68,13 +83,17 @@ Al clonar y ejecutar `python main.py`, vas a ver productos de prueba en el lista
    pip install -r requirements.txt
 
 3. Ejecutá la aplicación:
+   
    python main.py
 
-## Tips
+## - Tips
 
 - Presioná solo Enter en los menús para continuar
 - El stock bajo se alerta según el umbral que definas en el código
 
-💜Licencia
-  MIT License - Sentite libre de usar, modificar y compartir
-  Gracias por visitar mi proyecto!
+
+## 💜- Licencia
+  - MIT License - Sentite libre de usar, modificar y compartir
+  -  Gracias por visitar mi proyecto!
+
+
