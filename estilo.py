@@ -1,7 +1,10 @@
 # estilo.py - estilos Rich para mi app con ayuda de Grok, nunca usé esta biblioteca y no sabía bien como hacer
-from rich.console import Console
-from rich.panel import Panel
 from rich import print as rprint
+from rich.console import Console
+
+console = Console()
+
+
 
 console = Console()
 

@@ -1,7 +1,7 @@
 # agregar_producto.py - agregar nuevos productos al inventario
 
 from database import agregar_producto as agregar_en_bd
-from database import visualizar_listado_productos as obtener_productos # ← para obtener el último ID
+from database import visualizar_listado_productos as obtener_productos #para obtener el último ID
 from utils import esperar_enter
 from estilo import console, rprint, TITULO, EXITO, ADVERTENCIA, INFO
 from rich.panel import Panel
@@ -9,6 +9,7 @@ from rich.table import Table
 from database import ahora
 
 def ejecutar():
+    """Permite agregar un producto al inventario"""
     console.rule(f"[{TITULO}] AGREGANDO NUEVO PRODUCTO...")
 
     # Definimos las categorías disponibles

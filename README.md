@@ -78,4 +78,3 @@ Al clonar y ejecutar `python main.py`, vas a ver productos de prueba en el lista
 💜Licencia
   MIT License - Sentite libre de usar, modificar y compartir
   Gracias por visitar mi proyecto!
-# Sistema-de-Gestion-My-Lil-Colletion

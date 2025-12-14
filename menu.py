@@ -6,6 +6,7 @@ list_opciones = [
     "Agregar nuevo producto",
     "Buscar producto",
     "Eliminar producto",
+    "Registrar venta",
     "Ver productos con poco stock",
     "Ver todo el catálogo",
     "Papelera de reciclaje",
@@ -30,7 +31,7 @@ def opcion_input():
             if 1 <= opcion <= len(list_opciones):
                 return opcion
             else:
-                rprint(f"[{ERROR}]Opción inválida. Elegí un número del 1 al 8.")
+                rprint(f"[{ERROR}]Opción inválida. Elegí un número del 1 al 9.")
         except ValueError:
             rprint(f"[{ADVERTENCIA}]Por favor, ingresá un número (no letras ni símbolos).")
 

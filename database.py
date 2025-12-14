@@ -43,6 +43,20 @@ def inicializar_bd():
         )
     ''')
     
+    # NUEVA tabla ventas
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS ventas (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            id_producto INTEGER NOT NULL,
+            cantidad INTEGER NOT NULL,
+            fecha_venta TEXT NOT NULL,
+            precio_unitario REAL NOT NULL,
+            total REAL NOT NULL,
+            FOREIGN KEY (id_producto) REFERENCES productos (id)
+        )
+    ''')
+    
+    
     conn.commit() #se guardan los cambios en la base de datos
     conn.close() #se cierra la base de datos para ahorrar recursos
 
@@ -221,3 +235,60 @@ def validar_stock(limite):
 
 #---------------------------------------------------------------------------------------------------------
 
+def obtener_producto_por_id(id_producto):
+    """devuelve los datos de un producto por su id (para mostrar en resumen de ventas)"""
+    conn = conectar()
+    cursor = conn.cursor()
+    cursor.execute("""
+                   SELECT id, nombre, precio, categoria, descripcion, stock, fecha_registro
+                   FROM productos
+                   WHERE id = ? AND eliminado = 0
+                   """, (id_producto,))
+    producto = cursor.fetchone()
+    conn.close()
+    return producto
+            
+#---------------------------------------------------------------------------------------------------------
+
+def registrar_venta(id_producto, cantidad):
+    conn = conectar()
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("""
+            SELECT nombre, precio, stock
+            FROM productos
+            WHERE id = ? AND eliminado = 0
+        """, (id_producto,))
+        producto = cursor.fetchone()
+
+        if not producto:
+            return False, "Producto no encontrado"
+
+        nombre, precio, stock = producto
+
+        if stock < cantidad:
+            return False, f"Stock insuficiente. Disponible: {stock}"
+
+        total = precio * cantidad
+
+        cursor.execute("""
+            INSERT INTO ventas (id_producto, cantidad, fecha_venta, precio_unitario, total)
+            VALUES (?, ?, datetime('now'), ?, ?)
+        """, (id_producto, cantidad, precio, total))
+
+        cursor.execute("""
+            UPDATE productos
+            SET stock = stock - ?, ultima_modificacion = datetime('now')
+            WHERE id = ?
+        """, (cantidad, id_producto))
+
+        conn.commit()
+        return True, f"Venta registrada: {cantidad} x {nombre} → ${total:,.2f}"
+
+    except Exception as e:
+        conn.rollback()
+        return False, f"Error: {e}"
+
+    finally:
+        conn.close()

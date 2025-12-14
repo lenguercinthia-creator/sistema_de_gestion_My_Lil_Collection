@@ -8,6 +8,7 @@ from buscar_producto import ejecutar as buscar
 from eliminar_producto import ejecutar as eliminar
 from validar_stock import ejecutar as validar 
 from visualizar_listado_productos import ejecutar as visualizar
+from registrar_venta import ejecutar as venta
 import papelera
 from salir import ejecutar as salir  
 from estilo import console, rprint, TITULO, ERROR
@@ -56,13 +57,15 @@ while True:
             buscar()
         case 4: 
             eliminar()
-        case 5: 
-            validar()
+        case 5:
+            venta()
         case 6: 
-            visualizar()
+            validar()
         case 7: 
+            visualizar()
+        case 8: 
             papelera.menu_papelera()
-        case 8:
+        case 9:
             salir()           
             break             
         case _: 
