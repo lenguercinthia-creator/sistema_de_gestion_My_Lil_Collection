@@ -1688,7 +1688,6 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\\Lib\\lzma.py',
    'PYMODULE'),
-  ('main', 'C:\\Users\\Usuario\\Desktop\\SISTEMA_GESTION\\main.py', 'PYMODULE'),
   ('markdown_it',
    'C:\\Users\\Usuario\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\markdown_it\\__init__.py',
    'PYMODULE'),
@@ -2072,6 +2071,9 @@
    'PYMODULE'),
   ('packaging.version',
    'C:\\Users\\Usuario\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\packaging\\version.py',
+   'PYMODULE'),
+  ('papelera',
+   'C:\\Users\\Usuario\\Desktop\\SISTEMA_GESTION\\papelera.py',
    'PYMODULE'),
   ('parso',
    'C:\\Users\\Usuario\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\parso\\__init__.py',
@@ -3646,6 +3648,9 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\\Lib\\random.py',
    'PYMODULE'),
+  ('registrar_venta',
+   'C:\\Users\\Usuario\\Desktop\\SISTEMA_GESTION\\registrar_venta.py',
+   'PYMODULE'),
   ('rich',
    'C:\\Users\\Usuario\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\rich\\__init__.py',
    'PYMODULE'),
@@ -4654,6 +4659,9 @@
   ('urllib.response',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\\Lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('utils',
+   'C:\\Users\\Usuario\\Desktop\\SISTEMA_GESTION\\utils.py',
    'PYMODULE'),
   ('uuid',
    'C:\\Program '

@@ -36,6 +36,8 @@ My-Lil-Collection/
 
 ├── editar_producto.py
 
+|-- registrar_venta.py
+
 ├── eliminar_producto.py
 
 └── validar_stock.py
@@ -89,7 +91,9 @@ Seguime en el repositorio para ver las actualizaciones!
 - Presioná solo Enter en los menús para continuar
 - El stock bajo se alerta según el umbral que definas en el código
 
+
 ## 💜- Licencia
   - MIT License - Sentite libre de usar, modificar y compartir
   -  Gracias por visitar mi proyecto!
+
 

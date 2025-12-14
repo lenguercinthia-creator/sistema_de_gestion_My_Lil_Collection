@@ -3649,6 +3649,9 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\\Lib\\random.py',
    'PYMODULE'),
+  ('registrar_venta',
+   'C:\\Users\\Usuario\\Desktop\\SISTEMA_GESTION\\registrar_venta.py',
+   'PYMODULE'),
   ('rich',
    'C:\\Users\\Usuario\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\rich\\__init__.py',
    'PYMODULE'),
